@@ -1,0 +1,203 @@
+/* ==================== ENHANCED CARD HOVER EFFECTS ==================== */
+.card {
+    position: relative;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+/* ==================== GRADIENT TEXT ==================== */
+.gradient-text {
+    background: linear-gradient(135deg, #0d47a1, #00838f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ==================== ENHANCED SECTION HEADINGS ==================== */
+.section h2 {
+    position: relative;
+    padding-left: 30px;
+}
+
+.section h2::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-size: 0.8em;
+}
+
+/* ==================== BETTER LINK STYLING ==================== */
+.card a,
+.section a {
+    position: relative;
+}
+
+.card a::before,
+.section a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.card a:hover::before,
+.section a:hover::before {
+    width: 100%;
+}
+
+/* ==================== ENHANCED LIST ITEMS ==================== */
+.card ul li::before {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* ==================== SMOOTH TRANSITIONS ==================== */
+* {
+    transition-property: background-color, color, border-color, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ==================== FOCUS STATES FOR ACCESSIBILITY ==================== */
+a:focus,
+button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* ==================== SECTION SPACING ==================== */
+.section {
+    position: relative;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+    opacity: 0.3;
+}
+
+.section:first-of-type::before {
+    display: none;
+}
+
+/* ==================== LOADING ANIMATION ==================== */
+@keyframes shimmerLoad {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.loading {
+    animation: shimmerLoad 1.5s ease-in-out infinite;
+}
+
+/* ==================== ENHANCED RESPONSIVENESS ==================== */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.3em;
+    }
+
+    .section h2::before {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.8em;
+    }
+}
+
+/* ==================== SMOOTH SCROLL BEHAVIOR ==================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==================== ENHANCED PARALLAX ==================== */
+.hero-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ==================== DARK MODE SUPPORT (Optional) ==================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --card-bg: #2d2d2d;
+    }
+
+    body {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+}
+
+/* ==================== HIGH CONTRAST MODE ==================== */
+@media (prefers-contrast: more) {
+    .tag {
+        border-width: 2px;
+    }
+
+    .card {
+        border-left-width: 5px;
+    }
+
+    .btn {
+        border-width: 2px;
+    }
+}
+
+/* ==================== REDUCED MOTION ==================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

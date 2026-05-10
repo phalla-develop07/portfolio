@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phalla Suong - Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+    <link rel="stylesheet" href="css/professional.css">
+    <link rel="stylesheet" href="css/finishing.css">
+    <link rel="stylesheet" href="css/visual-enhancements.css">
+    <link rel="stylesheet" href="css/layout/navbar.css">
+    <link rel="stylesheet" href="css/layout/grid.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
+    <!-- Sections -->
+    <link rel="stylesheet" href="css/sections/home.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+    <link rel="stylesheet" href="css/sections/experience.css">
+    <link rel="stylesheet" href="css/sections/skills.css">
+    <link rel="stylesheet" href="css/sections/education.css">
+    <link rel="stylesheet" href="css/sections/references.css">
+    <link rel="stylesheet" href="css/sections/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <h1 class="logo">PHALLA SUONG</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Let the JS dynamically inject or we lay out the skeletal structure -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-content" id="hero-container"></div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <h2>About Me</h2>
+            <div class="grid grid-2" id="about-container"></div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+            <h2>Projects Experience</h2>
+            <div id="experience-container"></div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <h2>Skills & Tools</h2>
+            <div class="grid grid-3" id="skills-container"></div>
+        </section>
+    </main>
+
+    <!-- Full-width Tools Carousel (Outside Main Container) -->
+    <div id="tools-carousel" class="tools-carousel-section">
+        <div class="carousel-inner">
+            <div class="carousel-track" id="tools-carousel-track"></div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section id="education" class="section education-section">
+            <h2>Education, Workshops & Hobbies</h2>
+            <div class="grid" id="education-container"></div>
+        </section>
+
+        <section id="references" class="section references-section">
+            <h2>References</h2>
+            <div class="grid" id="references-container"></div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="contact-content" id="contact-container"></div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p class="footer-name">Phalla SUONG</p>
+                <p class="footer-title">Web Developer</p>
+                <p class="footer-description">Passionate web developer crafting modern solutions with Node.js, React.js, and full-stack expertise.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><strong>Phone:</strong> <a href="tel:+85567524899">(+855) 67 524 899</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:phalla.suong@student.passerellesnumeriques.org">phalla.suong@student.passerellesnumeriques.org</a></li>
+                    <li><strong>Location:</strong> BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangkat, Street 371, Phnom Penh</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

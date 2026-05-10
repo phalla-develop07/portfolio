@@ -1,0 +1,26 @@
+/* ==================== ABOUT SECTION ==================== */
+.about-section {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+#about-container .card {
+    border-left-color: #2196f3;
+}
+
+#about-container .card:nth-child(2) {
+    border-left-color: #4caf50;
+}
+
+.card ul {
+    margin-bottom: 0;
+}
+
+.card h4 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.card h4:first-of-type {
+    margin-top: 0;
+}

@@ -1,0 +1,228 @@
+/* ==================== PROFESSIONAL FINISHING TOUCHES ==================== */
+
+/* About Section Cards */
+.about-section .card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-left: 5px solid #00838f;
+}
+
+.about-section .card h3 {
+    background: linear-gradient(135deg, #0d47a1 0%, #00838f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.about-section .card h4 {
+    color: #00838f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.about-section .card ul li {
+    padding: 8px 0;
+    font-size: 0.95em;
+}
+
+.about-section .card a {
+    color: #00838f;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.about-section .card a:hover {
+    color: #0d47a1;
+}
+
+/* Experience Section Refinements */
+.experience-section .card {
+    border-left: 5px solid #0d47a1;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-left-width: 5px;
+}
+
+.experience-section .card ul li {
+    padding: 8px 0 8px 20px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Skills Section Refinements */
+.skills-section .card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    border: 2px solid #e0e0e0;
+    border-left: 5px solid #ff9800;
+}
+
+.skills-section .card h3 {
+    background: linear-gradient(135deg, #0d47a1 0%, #00838f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Education Section Refinements */
+.education-section h3 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00838f;
+    font-size: 1.3em;
+}
+
+.education-card,
+.workshop-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+}
+
+/* Reference Cards Refinement */
+.reference-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-top: 5px solid #0d47a1;
+}
+
+.reference-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 131, 143, 0.2);
+}
+
+/* Professional Spacing */
+.card p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.card ul li {
+    margin: 6px 0;
+}
+
+/* Hover Effects Enhancement */
+.card {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    border-color: #00838f;
+}
+
+/* Professional Text Colors */
+strong {
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+/* Consistent Button Styling */
+.btn {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d47a1 0%, #00838f 100%);
+    box-shadow: 0 6px 20px rgba(13, 71, 161, 0.3);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 10px 30px rgba(13, 71, 161, 0.5);
+}
+
+.btn-secondary {
+    color: #0d47a1;
+    border-color: #0d47a1;
+}
+
+.btn-secondary:hover {
+    background: #0d47a1;
+    color: white;
+}
+
+/* Footer Enhancement */
+footer {
+    background: linear-gradient(135deg, #0d47a1 0%, #00838f 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Print Optimization */
+@media print {
+    .scroll-to-top,
+    .cv-btn,
+    .cv-modal,
+    .navbar {
+        display: none;
+    }
+
+    .card {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+    }
+
+    .section {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 1024px) {
+    .profile-header h1 {
+        font-size: 3em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header h1 {
+        font-size: 2.2em;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .tag {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* High Quality Shadows */
+.card {
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.08);
+}
+
+.card:hover {
+    box-shadow: 0 12px 30px rgba(13, 71, 161, 0.15);
+}
+
+/* Accessibility Improvements */
+a:focus {
+    outline: 2px solid #00838f;
+    outline-offset: 2px;
+}
+
+button:focus {
+    outline: 2px solid #00838f;
+    outline-offset: 2px;
+}

@@ -1,0 +1,45 @@
+/* ==================== EDUCATION & WORKSHOPS SECTION ==================== */
+.education-section {
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.education-grid > div h3 {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.education-grid .card {
+    margin-bottom: 15px;
+}
+
+.education-grid .card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.education-grid .card .date {
+    font-size: 0.85em;
+    color: #999;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.education-grid .card p {
+    margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

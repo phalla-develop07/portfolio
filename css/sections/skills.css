@@ -1,0 +1,56 @@
+/* ==================== SKILLS SECTION ==================== */
+.skills-section {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    background: var(--bg-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.tag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    z-index: -1;
+    transition: left 0.3s ease;
+}
+
+.tag:hover {
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 131, 143, 0.2);
+}
+
+.tag:hover::before {
+    left: 0;
+}
+
+.tag:nth-child(1) { animation: scaleUp 0.5s ease-out 0.1s both; }
+.tag:nth-child(2) { animation: scaleUp 0.5s ease-out 0.15s both; }
+.tag:nth-child(3) { animation: scaleUp 0.5s ease-out 0.2s both; }
+.tag:nth-child(4) { animation: scaleUp 0.5s ease-out 0.25s both; }
+.tag:nth-child(5) { animation: scaleUp 0.5s ease-out 0.3s both; }
+.tag:nth-child(6) { animation: scaleUp 0.5s ease-out 0.35s both; }
+.tag:nth-child(7) { animation: scaleUp 0.5s ease-out 0.4s both; }
+.tag:nth-child(8) { animation: scaleUp 0.5s ease-out 0.45s both; }
+.tag:nth-child(n+9) { animation: scaleUp 0.5s ease-out 0.5s both; }
