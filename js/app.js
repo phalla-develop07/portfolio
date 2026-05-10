@@ -240,6 +240,9 @@ function renderReferences() {
     const container = document.getElementById('references-container');
     container.innerHTML = referencesData.map((ref, index) => `
         <div class="reference-card" style="animation-delay: ${index * 0.1}s">
+            <div class="reference-image-wrapper">
+                <img src="${ref.image}" alt="${ref.name}" class="reference-image">
+            </div>
             <h4>👤 ${ref.name}</h4>
             <div class="role">${ref.position}</div>
             <p>📞 <a href="tel:${ref.phone}">${ref.phone}</a></p>
